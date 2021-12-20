@@ -87,8 +87,9 @@ i{
 
 }
 
-title{
-     width: 250px;
+.title {
+    
+    width: 50%;
 }
 
 .hero {
