@@ -132,6 +132,7 @@ i {
 
     .footer {
         padding: 10px;
+        min-height: 70px;
     }
 
     i {
