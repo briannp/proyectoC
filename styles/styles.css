@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-.font{
+
+.font {
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: black;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.bg{
+
+.bg {
     background-image: url(../assets/background.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,14 +21,16 @@
     align-items: center;
     height: 100vh;
     max-width: 100%;
-    
+
 }
-.title{
+
+.title {
     -webkit-filter: invert(100%);
     filter: 100%;
-    
+
 }
-nav{
+
+nav {
     position: fixed;
     top: 0;
     display: flex;
@@ -37,40 +41,46 @@ nav{
     text-transform: uppercase;
 }
 
-.nav__item{
+.nav__item {
     display: inline-block;
     list-style: none;
     flex-wrap: wrap;
     padding: 20px 40px;
-   
-    
+
+
 }
-.nav__item:hover{
+
+.nav__item:hover {
     background-color: black;
 }
-  
 
-.hero{
-    display: grid;
-    grid-template-columns: auto 2fr auto;
-    
+.nav__btn {
+    display: none;
+    cursor: pointer;
 }
 
-.hero__title{
+
+.hero {
+    display: grid;
+    grid-template-columns: auto 2fr auto;
+
+}
+
+.hero__title {
     padding: 10px 0px;
     margin-bottom: 20px;
 }
 
-.hero__text{
+.hero__text {
     display: flex;
     align-self: center;
 }
 
-.hero__img{
+.hero__img {
     height: 599px;
 }
 
-.footer{
+.footer {
     background-color: grey;
     display: flex;
     justify-content: center;
@@ -79,33 +89,52 @@ nav{
     text-transform: uppercase;
 }
 
-i{
+i {
     padding: 20px 20px;
 }
 
 @media only screen and (max-width: 480px) {
 
-}
+    .bg {
+        background-size: auto;
+        height: 70vw;
+        max-width: 100%;
+        background-position: bottom;
+    }
 
-.title {
-    
-    width: 50%;
-}
+    .nav__item {
+        padding: 15px 10px;
+    }
 
-.hero {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    width-max: 480px;
-}
 
-.hero__img {
-    display: none;
-}
+    .title {
 
-.footer {
-    padding: 10px;
-}
- i{
-    padding: 10px 10px;
-}
+        width: 50%;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        max-width: 480px;
+    }
+
+    .hero__title{
+        text-align: center;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero__text{
+        margin: 10%;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    i {
+        padding: 10px 10px;
+    }
 }
